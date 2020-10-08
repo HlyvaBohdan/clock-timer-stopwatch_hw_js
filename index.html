@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="firstStep">
+            <div class="allFirst">
+                <div class="date"></div>
+                <div class="time"></div>
+            </div>
+        </div>
+        <div class="secondStep">
+            <div class="allSecond">
+                <div class="stopwatch">
+                    <div class="screen">00:00:00:000</div>
+                    <div class="buttons">
+                        <form>
+                            <input type="button" class='button start' value="START" onclick="startInterval()">
+                            <input type="button" class='button loop' value="LOOP" onclick="loopInterval()">
+                            <input type="button" class='button stop' value="STOP" onclick="stopInterval()">
+                            <input type="button" class='button reset' value="RESET" onclick="resetInterval()">
+
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="stopwatchDisplay">
+                    <textarea name="" id="" cols="30" rows="4" class="display" readonly></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="thirdStep">
+            <div class="allThird">
+                <div class="change">
+                    <div class="count">
+                        <div class="num">25</div>
+                        <div class="text">Minutes</div>
+                        <input type="button" class='buttonO plus' value="+" onclick="plus()">
+                        <input type="button" class='buttonO minus' value="-" onclick="minus()">
+                    </div>
+                </div>
+                <div class="timer">
+                    <div class="timerDisplay">00:00</div>
+                    <div class="timerButtons">
+                        <input type="button" class='button startT' value="START" onclick="startTimer()">
+                        <input type="button" class='button stopT' value="STOP" onclick="stopTimer()">
+                        <input type="button" class='button resetT' value="RESET" onclick="resetTimer()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
